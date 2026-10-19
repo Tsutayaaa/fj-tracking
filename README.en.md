@@ -189,12 +189,6 @@ Speed outliers are excluded from path length, while net displacement still uses 
 
 Reversal counts use the original direction-smoothing and threshold method. They have not been validated against manually annotated reversal events. Likewise, `major_axis_length` is an equivalent-ellipse measurement, not the centerline length of a curved cell.
 
-## Validation scope
-
-Packaging checks were performed in temporary Python 3.10 environments on macOS Apple Silicon. They covered dependency imports, loading both bundled models, displacement-based path calculation, empty feature tables, mask frame-index checks, and rejection of cached results after an input change.
-
-The full video analysis pipeline was not executed during these checks. Linux, Windows, and CUDA were not tested on actual hardware. Temporary test environments and test inputs are not included in the repository. Segmentation, splitting, tracking accuracy, and downstream biological measurements still require validation for the intended data.
-
 ## Upstream projects
 
 - [Omnipose](https://github.com/kevinjohncutler/omnipose) and its [model-loading documentation](https://omnipose.readthedocs.io/settings.html)
