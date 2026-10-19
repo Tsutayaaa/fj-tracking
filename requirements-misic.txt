@@ -1,0 +1,10 @@
+# 仅用于独立的 misic 环境；MiSiC 本体由 install.py 以 --no-deps 安装。
+numpy==1.23.5
+scipy==1.10.1
+scikit-image==0.21.0
+opencv-python-headless==4.10.0.84
+h5py==3.8.0
+protobuf==3.19.6
+tqdm>=4.64,<5
+tensorflow==2.10.1; sys_platform != "darwin" or platform_machine != "arm64"
+tensorflow-macos==2.10.0; sys_platform == "darwin" and platform_machine == "arm64"

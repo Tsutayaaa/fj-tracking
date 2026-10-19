@@ -1,0 +1,7 @@
+-r requirements.txt
+torch==2.5.1
+torchvision==0.20.1
+omnipose==1.1.4
+# 上游图像读取依赖需要兼容的 TIFF 接口。
+aicsimageio==4.14.0
+tifffile==2023.2.28

@@ -1,30 +1,25 @@
-# Python environments and caches
+# 用户数据、运行产物、中间文件
+data/
+outputs/
+masks_*/
+*.npy
+*.npy.tmp
+*.mp4
+*.avi
+*.mov
+*.mkv
+run_manifest.json
+
+# 环境、缓存、系统文件
 .venv/
 venv/
-env/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-.coverage.*
-htmlcov/
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Local editor and operating-system files
+.DS_Store
 .idea/
 .vscode/
-.DS_Store
-Thumbs.db
 
-# Local configuration and logs
-.env
-.env.*
-!.env.example
-*.log
-.ipynb_checkpoints/
+# 模型权重保留在版本库中。
+!models/
+!models/MiSiCv2.h5
+!models/bact_phase_omnitorch_0
