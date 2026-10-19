@@ -94,6 +94,3 @@ python main.py <视频路径> [both|omni|misic] [--device auto|cpu|cuda] [--outp
 
 本仓库保留原项目的分割、拆分和追踪策略；整理交付不等于已完成科研准确性验证。
 
-## 本次验证范围
-
-已在 macOS Apple Silicon / Python 3.10 的临时测试环境中完成两种后端的依赖导入和本地权重加载，并检查跨帧路程计算、空表输出、mask 帧号检查及输入变化时的缓存保护。未执行完整视频分析，Linux/Windows 和 CUDA 未进行实机验证。临时测试环境和测试数据均不包含在交付目录中。
